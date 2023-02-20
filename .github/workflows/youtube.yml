@@ -273,14 +273,15 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
         $(yt-dlp -g https://www.youtube.com/channel/UCq9e_hCv2jvgck8WowW1NXg/live)
         EOL
-    - name: Get sbn.m3u8
+    
+    - name: Get skynews.m3u8
       run: |
-        touch ./sbn.m3u8
-        sudo cat >./sbn.m3u8 <<EOL
+        touch ./skynews.m3u8
+        sudo cat >./skynewsm3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
-        $(yt-dlp -g https://www.youtube.com/channel/UCj82QbSA3Dz9ez3W8q-_5bw/live)
+        $(yt-dlp -g https://www.youtube.com/watch?v=9Auq9mYxFEE)
         EOL
     - name: Get africanews.m3u8
       run: |
